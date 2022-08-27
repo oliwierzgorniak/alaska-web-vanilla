@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My name is Oliwier and I create websites. With my help, you can have your own web page without technical skills."
+    />
+    <meta property="og:title" content="Alaska Web - creating websites" />
+    <meta
+      property="og:description"
+      content="With my help, you can have your own web page without technical skills."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="ozgorniak.pl/images/og.jpg" />
+    <meta property="og:url" content="ozgorniak.pl/en" />
+    <link rel="icon" href="/images/icon.svg" />
+    <title>Alaska Web</title>
+  </head>
+  <body>
+    <nav class="m-6 mb-36 flex justify-between items-center">
+      <div
+        class="hidden fixed top-0 left-0 h-full w-full bg-[#00000022]"
+        id="menu-bg"
+      ></div>
+      <div
+        class="menu flex fixed top-0 left-0 translate-x-[-100%] h-full bg-[white] px-16 drop-shadow-xl z-20 flex-col justify-between items-center"
+        id="menu"
+      >
+        <ul class="mt-12">
+          <li class="mb-10">
+            <a
+              class="text-3xl underline transition ease-in-out hover:text-accent block hover:translate-x-1 hover:duration-300"
+              href="#about"
+            >
+              #about
+            </a>
+          </li>
+          <li class="mb-10">
+            <a
+              class="text-3xl underline transition ease-in-out hover:text-accent block hover:translate-x-1 hover:duration-300"
+              href="#projects"
+            >
+              #projects
+            </a>
+          </li>
+          <li class="mb-10">
+            <a
+              class="text-3xl underline transition ease-in-out hover:text-accent block hover:translate-x-1 hover:duration-300"
+              href="#contact"
+            >
+              #contact
+            </a>
+          </li>
+        </ul>
+        <div class="flex items-center mb-4">
+          <a
+            class="p-[11px] xl:p-[15px]"
+            href="https://twitter.com/oliwierzgorniak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              width="34"
+              height="34"
+              class="w-[34px] h-[34px] xl:w-[52px] xl:h-[52px]"
+              src="/images/Github-black.png"
+              alt="Github icon"
+            />
+          </a>
+          <a
+            class="p-[11px] xl:-[15px]"
+            href="https://github.com/oliwierzgorniak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              width="34"
+              height="28"
+              class="w-[34px] xl:w-[52px]"
+              src="/images/Twitter-black.svg"
+              alt="Twitter icon"
+            />
+          </a>
+        </div>
+      </div>
+      <img
+        width="70px"
+        height="37px"
+        class="min-w-[70px] w-[18vw] max-w-[140px]"
+        src="/images/logo-dark.svg"
+        alt="Alaska Web logo"
+      />
+      <div class="flex gap-2 items-center">
+        <div class="flex border border-black p-2 gap-2 items-center h-min">
+          <img
+            width="22"
+            height="22"
+            class="min-w-[22px] w-[1.5vw]"
+            src="/images/languages.svg"
+            alt="languages icon"
+          />
+          <select class="bg-[transparent]" id="language-select">
+            <option value="pl">polski</option>
+            <option selected value="en">english</option>
+          </select>
+        </div>
+        <!-- license:  https://codepen.io/helloroman/details/jONLXVr -->
+        <button class="menu-button" aria-label="menu button" id="menu-button">
+          <span class="menu-button__box">
+            <span class="menu-button__inner"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <header
+        class="max-w-[1000px] px-6 mx-auto grid grid-cols-[1fr_auto] grid-rows-[repeat(2,auto)] xl:max-w-[1250px] 2xl:max-w-[1450px]"
+      >
+        <h1
+          class="mr-[-1.5em] leading-7 text-[1.16rem] xs:text-[1.58rem] xs:leading-9 md:text-[2.05rem] md:leading-[2.8rem] lg:text-[2.5rem] lg:leading-[2.9rem]"
+        >
+          <span
+            class="text-[1rem] inline-block xs:text-[1.3rem] xs:mb-1 md:text-[1.4rem] md:mb-0 lg:text-[1.6rem]"
+          >
+            Hi my name is Olwier
+          </span>
+          <br />
+          I create cool websites
+        </h1>
+        <picture class="col-start-2 row-start-1 row-end-3 self-end">
+          <source
+            srcset="/images/me-420-70.avif"
+            media="(min-width: 2500px)"
+            type="image/avif"
+          />
+          <source
+            srcset="/images/me-420-40.png"
+            media="(min-width: 2500px)"
+            type="image/png"
+          />
+          <source
+            srcset="/images/me-320-70.avif"
+            media="(min-width: 420px)"
+            type="image/avif"
+          />
+          <source
+            srcset="/images/me-320-40.png"
+            media="(min-width: 420px)"
+            type="image/png"
+          />
+          <source srcset="/images/me-170-70.avif" type="image/avif" />
+          <img
+            width="150"
+            height="251"
+            class="w-[40vw] max-w-[300px] block xl:max-w-[350px] 2xl:max-w-[400px]"
+            src="/images/me-170-40.png"
+            alt="my photo"
+          />
+        </picture>
+        <a href="#contact" class="self-start justify-self-center m-4 xl:m-8">
+          <img
+            width="113"
+            height="114"
+            class="w-[30vw] max-w-[220px] xl:max-w-[250px] 2xl:max-w-[300px]"
+            src="/images/contact-en.svg"
+            alt="contact button"
+          />
+        </a>
+      </header>
+    </main>
+    <section
+      class="flex justify-center gap-7 px-6 pt-16 pb-12 bg-background md:pb-10 lg:pb-8"
+      id="about"
+    >
+      <img
+        width="48"
+        height="39"
+        class="self-end h-[10vw] min-h-[3.5rem] max-h-[6rem]"
+        src="/images/forrest.svg"
+        alt="forrest"
+      />
+      <div class="max-w-[30rem] leading-6 pb-12 md:pb-16 lg:pb-20">
+        <h2 class="mb-2">About me</h2>
+        <p>
+          Creating websites is my passion. I do it almost everyday. With my
+          help, you can have your own web page without technical skills. I can
+          design, code and, host websites.
+        </p>
+      </div>
+    </section>
+    <section class="flex flex-col items-center px-6 py-16 mb-6" id="projects">
+      <div class="flex items-center gap-2 m-auto mb-7">
+        <img
+          width="22"
+          height="9"
+          class="w-8"
+          src="/images/wave.svg"
+          alt="wave"
+        />
+        <h2 class="mb-2">Projects</h2>
+        <img
+          width="22"
+          height="9"
+          class="w-8"
+          src="/images/wave.svg"
+          alt="wave"
+        />
+      </div>
+      <div class="flex flex-col gap-6">
+        <div class="w-full max-w-[25rem] border-2 px-10 py-10">
+          <h3 class="mb-3 font-semibold">Mapartments</h3>
+          <p class="mb-5">A wesbite with apartments for rent in Krakow</p>
+          <div class="flex gap-1 mb-8">
+            <a
+              class="p-2"
+              href="https://mapartments.krakow.pl/"
+              rel="noopener noreferrer"
+            >
+              <img
+                width="25"
+                height="25"
+                class="h-9"
+                src="/images/external-link.svg"
+                alt="external link icon"
+              />
+            </a>
+            <a
+              class="p-2"
+              href="https://github.com/oliwierzgorniak/mapartments"
+              rel="noopener noreferrer"
+            >
+              <img
+                width="25"
+                height="25"
+                class="h-9"
+                src="/images/Github-black.png"
+                alt="Github icon"
+              />
+            </a>
+          </div>
+          <a
+            href="https://github.com/oliwierzgorniak/mapartments"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <picture>
+              <source
+                srcset="/images/mapartments-670.avif"
+                media="(min-width: 1700px)"
+                type="image/avif"
+              />
+              <source
+                srcset="/images/mapartments-670.png"
+                media="(min-width: 1700px)"
+                type="image/png"
+              />
+              <source
+                srcset="/images/mapartments-420.avif"
+                media="(min-width: 500px)"
+                type="image/avif"
+              />
+              <source
+                srcset="/images/mapartments-420.png"
+                media="(min-width: 500px)"
+                type="image/png"
+              />
+              <source srcset="/images/mapartments-230.avif" type="image/avif" />
+              <img
+                width="216"
+                height="108"
+                src="/images/mapartments-230.png"
+                alt="image of the project"
+              />
+            </picture>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="pb-20" id="contact">
+      <img
+        width="375"
+        height="202"
+        class="w-full"
+        src="/images/contact.svg"
+        alt="mountains an forrest"
+      />
+      <div
+        class="flex flex-col items-center my-[-2rem] pb-[2rem] xl:my-[-4rem] xl:pb-[4rem] 2xl:my-[-5rem] 2xl:pb-[5rem]"
+      >
+        <h2 class="text-3xl mb-10">Contact</h2>
+        <span class="text-center font-semibold mb-10 text-xl">
+          Email: <br />
+          <span class="font-normal">oliwier.zgorniak@protonmail.com</span>
+        </span>
+        <a
+          href="mailto:oliwier.zgorniak@protonmail.com"
+          class="bg-accent flex gap-4 p-5 text-[white] font-semibold tracking-wide text-lg items-center rounded-sm"
+        >
+          send an email
+          <img
+            width="24"
+            height="15"
+            class="h-6"
+            src="/images/email.svg"
+            alt="email"
+          />
+        </a>
+      </div>
+    </section>
+    <footer class="bg-primary flex justify-between px-6 py-8">
+      <img
+        width="77"
+        height="56"
+        class="w-28"
+        src="/images/logo-light.svg"
+        alt="Alaska Web logo"
+      />
+      <div class="flex items-center">
+        <a
+          class="p-[11px] xl:p-[15px]"
+          href="https://github.com/oliwierzgorniak"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            width="34"
+            height="34"
+            class="w-[34px] h-[34px] xl:w-[52px] xl:h-[52px]"
+            src="/images/Github-white.png"
+            alt="Github icon"
+          />
+        </a>
+        <a
+          class="p-[11px] xl:-[15px]"
+          href="https://twitter.com/oliwierzgorniak"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            width="34"
+            height="28"
+            class="w-[34px] xl:w-[52px]"
+            src="/images/Twitter-white.svg"
+            alt="Twitter icon"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
