@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "watch": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "build": "webpack",
-    "dev": "nodemon --exec 'sirv dist' index.html"
+    "build": "webpack"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",

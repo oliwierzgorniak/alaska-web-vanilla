@@ -69,7 +69,7 @@ module.exports = {
           context: path.resolve(__dirname, "public"),
         },
         {
-          from: path.resolve(__dirname, "note.md"),
+          from: path.resolve(__dirname, "README.md"),
           to: path.resolve(__dirname, "dist"),
         },
       ],
