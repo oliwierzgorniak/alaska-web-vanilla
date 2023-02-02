@@ -5,7 +5,7 @@
 My personal website, which is used as and advertisement of me as a freelance web developer.
 
 ## Technologies
-The website is built mainly in html, css and javascript. Although I use webpack with bunch of plugins for building the project.
+The website is built mainly in html, css, javascript and tailwind. I use webpack with bunch of plugins for building the project.
 
 ## resources
 - https://levelup.gitconnected.com/setup-tailwind-css-with-webpack-3458be3eb547
