@@ -1,5 +1,13 @@
-## resources
+# Alaska Web vanilla
+[Link](https://oliwierzgorniak.pl/en)
 
+## Description
+My personal website, which is used as and advertisement of me as a freelance web developer.
+
+## Technologies
+The website is built mainly in html, css and javascript. Although I use webpack with bunch of plugins for building the project.
+
+## resources
 - https://levelup.gitconnected.com/setup-tailwind-css-with-webpack-3458be3eb547
 - [colors](https://colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9)
 - [language selection](https://docs.astro.build/en/guides/integrations-guide/react/)
